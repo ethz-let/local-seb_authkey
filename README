@@ -1,0 +1,23 @@
+SEB Auth Key Web Service plugin for Moodle 2.X+
+------------------------------------------
+
+A moodle web service designed to allow SEB server to update/add SEB Auth Keys into specific moodle quiz.
+
+To install:
+Install the plugin in moodle/local/seb_authkey/
+
+To setup:
+1- Install the plugin
+2- Enable web service advance feature (Admin > Advanced features)
+3- Enable preferred web service protocols (Admin > Plugins > Web services > Manage protocols)
+4- Create a token for a specific user (or at site level if wanted; i.e admin user) and for the service 'SEB Authentication Key Web Service' (Admin > Plugins > Web services > Manage tokens)
+5- Endpoint will be dependant on the used protocol: MOODLE_DOMAIN/webservice/PROTOCOL/server.php
+   ie: Endpoint for xmlrpc:  MOODLE_DOMAIN/webservice/xmlrpc/server.php
+   ie: Endpoint for soap:  MOODLE_DOMAIN/webservice/soap/server.php
+   ie: Endpoint for rest:  MOODLE_DOMAIN/webservice/rest/server.php
+6- Required Parameters are: sebkey, quizcmid (and generated token)
+
+Min Requirements:
+1- Moodle 2.X+
+2- SEB 2.2
+3- moodle-quizaccess_safeexambrowser (https://github.com/moodleou/moodle-quizaccess_safeexambrowser)
