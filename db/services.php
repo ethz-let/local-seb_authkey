@@ -17,7 +17,7 @@
  * Web service local plugin template external functions and service definitions.
  *
  * @package    localseb_authkey
- * @copyright  2011 Jerome Mouneyrac
+ * @copyright  2018 A Hourani
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
